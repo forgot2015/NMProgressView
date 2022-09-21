@@ -13,9 +13,9 @@ afterEvaluate {
             // Creates a Maven publication called "release".
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.linzongfu.nmprogressview'
+                groupId = 'com.github.forgot2015'
                 artifactId = 'NMProgressView'
-                version = '1.0'
+                version = '1.0.1'
             }
         }
     }
@@ -30,8 +30,8 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
-        versionCode 1
-        versionName '1.0.0'
+        versionCode 2
+        versionName '1.0.1'
     }
 
     buildTypes {
