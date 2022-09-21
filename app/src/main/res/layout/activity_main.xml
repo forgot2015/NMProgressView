@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    tools:context=".MainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.linzongfu.nmprogressview.NMCircleProgress
+                    android:id="@+id/myProgressView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    app:nmcp_cakeBgColor="#80FFE9C1"
+                    app:nmcp_progress="30"
+                    app:nmcp_progressBarColor="#FFFFDB49"
+                    app:nmcp_progressBarWidth="6dp"
+                    app:nmcp_progressBgColor="#FFFFE9C1"
+                    app:nmcp_progressBgWidth="3dp"
+                    app:nmcp_progressText="200"
+                    app:nmcp_progressTextColor="#FF222222"
+                    app:nmcp_progressTextColorDisable="#FFD7C29C"
+                    app:nmcp_progressTextSize="15dp"
+                    app:nmcp_progressTextType="fixed"
+                    app:nmcp_textStyle="bold" />
+
+                <com.linzongfu.nmprogressview.NMCircleProgress
+                    android:id="@+id/myProgressView2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="15dp"
+                    app:nmcp_bgProgress="100"
+                    app:nmcp_cakeBgColor="#ffffff"
+                    app:nmcp_endAngle="180"
+                    app:nmcp_maxProgress="100"
+                    app:nmcp_progress="100"
+                    app:nmcp_progressBarColor="#FFFFDB49"
+                    app:nmcp_progressBarWidth="6dp"
+                    app:nmcp_progressBgColor="#FFFFE9C1"
+                    app:nmcp_progressBgWidth="3dp"
+                    app:nmcp_progressText="200"
+                    app:nmcp_progressTextColor="#FF222222"
+                    app:nmcp_progressTextColorDisable="#FFD7C29C"
+                    app:nmcp_progressTextSize="14dp"
+                    app:nmcp_progressTextType="progress"
+                    app:nmcp_startAngle="0"
+                    app:nmcp_strikeThruText="true"
+                    app:nmcp_textStyle="bold"
+                    app:nmcp_underlineText="true" />
+
+                <com.linzongfu.nmprogressview.NMCircleProgress
+                    android:id="@+id/myProgressView3"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="15dp"
+                    app:nmcp_cakeBgColor="#80FFE9C1"
+                    app:nmcp_direction="antiClockwise"
+                    app:nmcp_progress="30"
+                    app:nmcp_progressBarColor="#FFFFDB49"
+                    app:nmcp_progressBarWidth="6dp"
+                    app:nmcp_progressBgColor="#FFFFE9C1"
+                    app:nmcp_progressBgWidth="3dp"
+                    app:nmcp_progressText="200"
+                    app:nmcp_progressTextColor="#FF222222"
+                    app:nmcp_progressTextColorDisable="#FFD7C29C"
+                    app:nmcp_progressTextSize="15dp"
+                    app:nmcp_progressTextType="fixed"
+                    app:nmcp_textStyle="bold" />
+
+                <com.linzongfu.nmprogressview.NMCircleProgress
+                    android:id="@+id/myProgressView4"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="15dp"
+                    app:nmcp_cakeBgColor="#80FFE9C1"
+                    app:nmcp_endAngle="405"
+                    app:nmcp_progressBarColor="#FFFFDB49"
+                    app:nmcp_progressBarWidth="6dp"
+                    app:nmcp_progressBgColor="#FFFFE9C1"
+                    app:nmcp_progressBgWidth="3dp"
+                    app:nmcp_progressTextColor="#FF222222"
+                    app:nmcp_progressTextColorDisable="#FFD7C29C"
+                    app:nmcp_progressTextSize="15dp"
+                    app:nmcp_startAngle="135"
+                    app:nmcp_textStyle="bold"
+                    tools:nmcp_progress="50" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/sbProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:max="100" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>
