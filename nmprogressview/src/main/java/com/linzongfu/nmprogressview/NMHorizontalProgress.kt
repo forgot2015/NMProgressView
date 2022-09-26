@@ -242,7 +242,8 @@ public class NMHorizontalProgress(
         dashBgPaint.strokeWidth = dashWidth.toFloat()
         dashBgPaint.style = Paint.Style.FILL
         dashBgPaint.isAntiAlias = true
-        dashBgPaint.strokeCap = Paint.Cap.ROUND
+//        dashBgPaint.strokeCap = Paint.Cap.ROUND
+        dashBgPaint.strokeCap = Paint.Cap.BUTT
         //绘制有间距,倾斜度的进度条
         //角度转弧度
         val radians = Math.PI / 180 * dashAngle

@@ -20,8 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initView() {
-        val sbProgress = findViewById<SeekBar>(R.id.sbProgress)
-        sbProgress.setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
+        binding.sbProgress.setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
             override fun onProgressChanged(seekBar: SeekBar, progress: Int, fromUser: Boolean) {
                 if (fromUser) {
                     binding.myProgressView.setProgress(progress)
@@ -34,11 +33,11 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         binding.myProgressView.setTextEnable(true)
                     }
-//                    if (progress > 95) {
-//                        binding.horizontalProgress.stopAnimation()
-//                    } else {
-//                        binding.horizontalProgress.startAnimation()
-//                    }
+                    if (progress > 95) {
+                        binding.myProgressHorizontal.stopAnimation()
+                    } else {
+                        binding.myProgressHorizontal.startAnimation()
+                    }
                 }
             }
 
