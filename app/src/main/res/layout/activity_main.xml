@@ -101,6 +101,26 @@
                     tools:nmcp_progress="50" />
             </LinearLayout>
 
+            <com.linzongfu.nmprogressview.NMHorizontalProgress
+                android:id="@+id/myProgressHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                app:nmhp_anim_play="true"
+                app:nmhp_anim_speed="4"
+                app:nmhp_bgColor="#FFE9C7"
+                app:nmhp_dashAngle="20"
+                app:nmhp_dashBgColor="#FDD85F"
+                app:nmhp_dashColor="#FDCF3A"
+                app:nmhp_dashDividerWidth="10dp"
+                app:nmhp_dashWidth="6dp"
+                app:nmhp_finish_thumb="@drawable/ic_test2"
+                app:nmhp_progress="80"
+                app:nmhp_progress_height="15dp"
+                app:nmhp_thumb="@drawable/ic_test1"
+                app:nmhp_thumb_height="30dp"
+                app:nmhp_thumb_offset="-20dp" />
+
             <SeekBar
                 android:id="@+id/sbProgress"
                 android:layout_width="match_parent"

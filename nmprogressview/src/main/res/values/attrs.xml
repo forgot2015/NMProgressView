@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<!--    圆形进度条自定义参数-->
+    <!--圆形进度条自定义参数-->
     <declare-styleable name="NMCircleProgress">
-        <!--        中间圆饼颜色-->
+        <!--中间圆饼颜色-->
         <attr name="nmcp_cakeBgColor" format="color" />
-        <!--        未完成时的进度条颜色-->
+        <!--未完成时的进度条颜色-->
         <attr name="nmcp_progressBgColor" format="color" />
-        <!--        未完成时的进度条宽度-->
+        <!--未完成时的进度条宽度-->
         <attr name="nmcp_progressBgWidth" format="dimension" />
-        <!--        进度条颜色-->
+        <!--进度条颜色-->
         <attr name="nmcp_progressBarColor" format="color" />
-        <!--        进度条宽度-->
+        <!--进度条宽度-->
         <attr name="nmcp_progressBarWidth" format="dimension" />
-        <!--        文字颜色-->
+        <!--文字颜色-->
         <attr name="nmcp_progressTextColor" format="color" />
-        <!--        文字失效时的颜色-->
+        <!--文字失效时的颜色-->
         <attr name="nmcp_progressTextColorDisable" format="color" />
-        <!--        文字大小-->
+        <!--文字大小-->
         <attr name="nmcp_progressTextSize" format="dimension" />
-        <!--        要显示的文字类型-->
+        <!--要显示的文字类型-->
         <attr name="nmcp_progressTextType">
-            <!--            显示进度条-->
+            <!--显示进度条-->
             <flag name="progress" value="1" />
-            <!--            显示固定文字-->
+            <!--显示固定文字-->
             <flag name="fixed" value="2" />
         </attr>
-        <!--        文字固定内容-->
+        <!--固定文字内容-->
         <attr name="nmcp_progressText" format="string" />
-        <!--        已完成进度条的-->
+        <!--已完成进度条的进度-->
         <attr name="nmcp_progress" format="integer" />
-        <!--        未完成进度条的进度-->
+        <!-- 未完成进度条的进度-->
         <attr name="nmcp_bgProgress" format="integer" />
-        <!--        最大进度-->
+        <!--最大进度-->
         <attr name="nmcp_maxProgress" format="integer" />
-        <!--        开始角度-->
+        <!--圆环开始角度-->
         <attr name="nmcp_startAngle" format="integer" />
-        <!--        结束的角度-->
+        <!--圆环结束的角度-->
         <attr name="nmcp_endAngle" format="integer" />
         <attr name="nmcp_direction">
             <flag name="clockwise" value="0" />
             <flag name="antiClockwise" value="1" />
         </attr>
-        <!--        文字是否有删除线-->
+        <!--文字是否有删除线-->
         <attr name="nmcp_strikeThruText" format="boolean" />
-        <!--        文字是否有下划线-->
+        <!--文字是否有下划线-->
         <attr name="nmcp_underlineText" format="boolean" />
-        <!--        文字样式-->
+        <!--文字样式-->
         <attr name="nmcp_textStyle">
             <flag name="normal" value="0" />
             <flag name="bold" value="1" />
@@ -53,35 +53,35 @@
         </attr>
     </declare-styleable>
 
-<!--    水平进度条自定义参数-->
+    <!--水平进度条自定义参数-->
     <declare-styleable name="NMHorizontalProgress">
-        <!--        进度条高度-->
+        <!--进度条高度-->
         <attr name="nmhp_progress_height" format="dimension" />
-        <!--       完成进度时要另外显示的头部图标 -->
+        <!--完成进度时要另外显示的头部图标 -->
         <attr name="nmhp_finish_thumb" format="integer" />
-        <!--       头部图标 -->
+        <!--头部图标 -->
         <attr name="nmhp_thumb" format="integer" />
-
-        <!--        头部图标左右偏移距离-->
+        <!--头部图标左右偏移距离-->
         <attr name="nmhp_thumb_offset" format="dimension" />
-        <!--        头部图标的高度-->
+        <!--头部图标的高度-->
         <attr name="nmhp_thumb_height" format="dimension" />
         <!--背景颜色-->
         <attr name="nmhp_bgColor" format="color" />
         <!--波折线背景颜色-->
         <attr name="nmhp_dashBgColor" format="color" />
-        <!-- 波折线颜色-->
+        <!--波折线颜色-->
         <attr name="nmhp_dashColor" format="color" />
-        <!--        波折线宽度-->
+        <!--波折线宽度-->
         <attr name="nmhp_dashWidth" format="dimension" />
-        <!--        波折线间距宽度-->
+        <!--波折线间距宽度-->
         <attr name="nmhp_dashDividerWidth" format="dimension" />
-        <!--        波折线倾斜角度,垂直 Y 轴为 0, 顺时针转为正数,逆时针为负数-->
+        <!--波折线倾斜角度,垂直 Y 轴为 0, 顺时针转为正数,逆时针为负数-->
         <attr name="nmhp_dashAngle" format="integer" />
-        <!--        当前进度-->
+        <!--当前进度-->
         <attr name="nmhp_progress" format="integer" />
-        <!--        动画速度,1~5,默认 3-->
+        <!--动画速度,1~5,默认 3-->
         <attr name="nmhp_anim_speed" format="integer" />
+        <!--是否播放动画-->
         <attr name="nmhp_anim_play" format="boolean" />
     </declare-styleable>
 </resources>

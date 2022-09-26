@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
                     binding.myProgressView2.setProgress(progress)
                     binding.myProgressView3.setProgress(progress)
                     binding.myProgressView4.setProgress(progress)
-//                    binding.horizontalProgress.setProgress(progress)
+                    binding.myProgressHorizontal.setProgress(progress)
                     if (progress % 10 == 0) {
                         binding.myProgressView.setTextEnable(false)
                     } else {
